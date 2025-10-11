@@ -62,6 +62,18 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
+
+        <div className="text--center margin-top--lg">
+          <p>¡Explora todas las funcionalidades de CronoSENA!</p>
+          <a
+            className="button button--primary button--lg"
+            href="https://cronosena.site" 
+            target=""
+            rel="noopener noreferrer"
+          >
+            Ir al sistema
+          </a>
+        </div>
       </div>
     </section>
   );
