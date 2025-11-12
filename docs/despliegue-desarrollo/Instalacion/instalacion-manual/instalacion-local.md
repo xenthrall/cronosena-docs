@@ -1,0 +1,70 @@
+---
+sidebar_position: 2
+---
+
+# Proceso de Instalacion
+
+Requiere instalar PHP, Composer, Node.js y otras dependencias necesarias. Esta opción ofrece mayor control sobre el entorno y es útil si quieres desarrollar directamente sin contenedores. Requiere más pasos y tiempo.
+
+Sigue estos pasos para desplegar **CronoSENA** en tu entorno de desarrollo local utilizando Docker y Docker Compose.
+
+## 1. Clonar el Repositorio
+
+Abre tu terminal y ejecuta los siguientes comandos:
+
+```bash
+git clone https://github.com/xenthrall/CronoSENA.git
+cd CronoSENA
+```
+ 
+## 2. Configurar el Entorno
+
+El proyecto utiliza un archivo `.env` para las variables de entorno. Cópialo a partir del ejemplo:
+
+```bash
+# Navega al directorio de la aplicación
+cd src
+
+# Copia el archivo de ejemplo
+cp .env.example .env
+```
+
+Las variables por defecto ya están configuradas para funcionar con `docker-compose.yml`.
+
+## 3. Instalar dependencias desde consola
+
+Desde la raíz del proyecto (\CronoSENA\src), ejecuta los siguientes comandos si es necesario:
+
+instalar las dependencias del proyecto:
+ ## dependecias de composer
+```bash
+composer install
+```
+Una vez realizado creemos el archivo de configuracion `.env`.
+Pero primero asegurate de que estas dentro de la carpeta `\src` con el siguiente comando:
+```bash
+cd src
+```
+
+crea el archivo de configuracion `.env`. 
+```bash
+cp .env.example .env
+```
+Despues de este proceso, realizaremos la creacion de la clave criptográfica con el siguiente comando:
+
+```bash
+php artisan key:generate
+```
+
+## 5. Ejecuta migraciones
+```bash
+php artisan migrate
+```
+
+## ¡Listo para Usar!
+
+Abre tu navegador y accede a la siguiente URL para ver la aplicación en funcionamiento:
+
+👉 [http://localhost:8080](http://localhost:8080)
+
+---

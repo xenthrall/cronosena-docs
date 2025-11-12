@@ -1,0 +1,10 @@
+{
+  "label": "Instalacion",
+  "position": 0,
+  "link": {
+    "type": "generated-index",
+    "description": "Aprende cómo desplegar el sistema CronoSENA utilizando Docker en cuestión de minutos."
+  }
+}
+
+  
