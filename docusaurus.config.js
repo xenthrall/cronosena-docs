@@ -97,11 +97,6 @@ const config = {
             label: 'Documentos',
           
           },
-          {
-            to: '/roadmap',
-          label: 'Roadmap',
-          position: 'left',
-          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://cronosena.site',
