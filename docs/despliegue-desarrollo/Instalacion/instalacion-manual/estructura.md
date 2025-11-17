@@ -150,20 +150,4 @@ Archivo repetido en la raíz con el estado exacto de dependencias Node.
 Documentación raíz del proyecto.
 
 
-CronoSENA implementa tres paneles Filament independientes, cada uno registrado como proveedor de servicios y configurado con rutas, mecanismos de autenticación y conjuntos de recursos distintos.
-
-![Arquitectura](/img/arquitectura.png)
-
-Cada proveedor de paneles amplía `Filament\PanelProvidery` configura:
-
-| Configuración del panel          | PlanificacionAcademicaPanelProvider                          | Proveedor de panel de instructores               |
-|----------------------------------|---------------------------------------------------------------|--------------------------------------------------|
-| **ID del panel**                 | admin                                                         | instructor                                       |
-| **Ruta de la URL**               | /admin                                                        | /instructor                                      |
-| **Es predeterminado**            | true                                                          | false                                            |
-| **Guardia de autorización**      | web (por defecto)                                             | instructor                                       |
-| **Página de inicio de sesión**   | AdminLogin::class                                             | Inicio de sesión predeterminado de Filament      |
-| **Color primario**               | Índigo                                                        | Primario                                         |
-| **Recursos**                     | Descubre desde `app/Filament/Resources`                      | Ninguno (solo perfil)                            |
-| **Grupos de navegación**         | 5 grupos (gestión académica, programas, fichas, instructores, sistema) | Mínimo    |
 
