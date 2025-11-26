@@ -28,3 +28,30 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+.fileBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #f2f2f2;
+  padding: 0.5px 8px;     /* ← PASTILLA BAJITA */
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;      /* ← MENOS ALTA */
+  font-family: sans-serif;
+  margin: 1% ;
+}
+
+.fileBadgeIcon {
+  opacity: 1px;
+  width: 15px;          /* ← ÍCONO MÁS PEQUEÑO */
+  height: 15px;
+}
+
+.fileBadgeRange {
+  color: #666;
+  font-size: 14px;
+  padding: 3px;
+}
