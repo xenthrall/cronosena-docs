@@ -67,7 +67,7 @@ export default function HomepageFeatures() {
           <p>¡Explora todas las funcionalidades de CronoSENA!</p>
           <a
             className="button button--primary button--lg"
-            href="https://cronosena.site" 
+            href="https://cronosena.com" 
             target=""
             rel="noopener noreferrer"
           >

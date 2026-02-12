@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://docs.cronosena.site',
+  url: 'https://docs.cronosena.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -99,7 +99,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://cronosena.site',
+            href: 'https://cronosena.com',
           label: 'Ir al sistema',
           position: 'right',
           className: 'button button',
